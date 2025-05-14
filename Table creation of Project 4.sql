@@ -116,7 +116,7 @@ WHERE NOT EXISTS (
     WHERE clubs.club_id = club_games.club_id
 );
 
-ALTER TABLE transfers ENABLE TRIGGER ALL;
+ALTER TABLE club_games ENABLE TRIGGER ALL;
 
 CREATE TABLE player_valuations (
     player_id BIGINT NOT NULL,
